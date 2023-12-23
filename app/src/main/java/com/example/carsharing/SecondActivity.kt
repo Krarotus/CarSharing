@@ -21,7 +21,7 @@ class SecondActivity : AppCompatActivity() {
     }
 
     companion object {
-        fun newIntent(packageContext: Context, answer: Float): Intent {
+        fun newIntent(packageContext: Context, answer: Int): Intent {
             return Intent(packageContext, SecondActivity::class.java).apply {
                 putExtra(EXTRA, answer)
             }

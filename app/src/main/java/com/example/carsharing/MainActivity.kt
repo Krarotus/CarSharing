@@ -39,8 +39,10 @@ class MainActivity : AppCompatActivity() {
         })
         button.setOnClickListener {
             val currentValue = discountSeekBar.progress
-            val answer = (moneyCar * Integer.parseInt(colH.text.toString().trim()))*(currentValue.toFloat()/100)
-            val intent = SecondActivity.newIntent(this@MainActivity, answer)
+            val discountCoefficient = currentValue.toDouble() / 100
+            val discountedAmount = moneyCar - (moneyCar * discountCoefficient)
+            val answer = discountedAmount * Integer.parseInt(colH.text.toString().trim())
+            val intent = SecondActivity.newIntent(this@MainActivity, answer.toInt())
             startActivity(intent)
         }
 
