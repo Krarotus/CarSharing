@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name" translatable="false">CarSharing</string>
+    <string name="colHours">Количество часов:</string>
+    <string name="button">OK</string>
+    <string name="colHint">Введите значение</string>
+    <string name="RadioButton">Toyota Corolla (2000р./ч)</string>
+    <string name="RadioButton2">Nissan Cargo (2500р./ч)</string>
+    <string name="RadioButton3">БелАЗ (3500р./ч)</string>
+
+</resources>
