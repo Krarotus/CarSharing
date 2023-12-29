@@ -19,7 +19,7 @@ class SecondActivity : AppCompatActivity() {
         answer = intent.getIntExtra(EXTRA, 0)
         fullAnswer.setText("Оплатить $answer рублей")
     }
-
+99
     companion object {
         fun newIntent(packageContext: Context, answer: Int): Intent {
             return Intent(packageContext, SecondActivity::class.java).apply {
